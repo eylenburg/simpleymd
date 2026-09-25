@@ -1,0 +1,20 @@
+Simple YMD is a small homescreen widget that shows a label and a compact
+years / months / days counter.
+
+Example:
+
+Childs birthday
+1Y 3M 18D
+
+Features:
+* Count up from a past date, or down to a future date
+* Per-widget label, date, dark/light colours, background opacity
+* 2×1 default size, resizable
+* No network, no ads, no tracking
+* All data stays on the device
+
+Add the widget from the home screen: long-press → Widgets → Simple YMD.
+Tap a widget to edit it.
+
+For a reliable midnight update, allow exact alarms for this app.
+On some phones, also set Battery → Unrestricted.
