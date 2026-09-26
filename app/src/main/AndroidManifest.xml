@@ -39,7 +39,7 @@
                 <action android:name="android.intent.action.DATE_CHANGED" />
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="dev.simpleymd.widget.ACTION_MIDNIGHT_UPDATE" />
+                <action android:name="com.github.eylenburg.simpleymd.ACTION_MIDNIGHT_UPDATE" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"

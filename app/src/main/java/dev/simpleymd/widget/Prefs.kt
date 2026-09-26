@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.content.Context
 import java.time.LocalDate

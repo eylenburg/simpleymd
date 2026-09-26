@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName

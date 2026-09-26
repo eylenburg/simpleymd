@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.app.DatePickerDialog
 import android.appwidget.AppWidgetManager
@@ -6,7 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import dev.simpleymd.widget.databinding.ActivityConfigureBinding
+import com.github.eylenburg.simpleymd.databinding.ActivityConfigureBinding
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle

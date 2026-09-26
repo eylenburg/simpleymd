@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import java.time.LocalDate
 import java.time.Period

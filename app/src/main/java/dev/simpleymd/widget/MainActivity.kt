@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.app.AlarmManager
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import dev.simpleymd.widget.databinding.ActivityMainBinding
+import com.github.eylenburg.simpleymd.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private var askedAlarmsThisProcess = false

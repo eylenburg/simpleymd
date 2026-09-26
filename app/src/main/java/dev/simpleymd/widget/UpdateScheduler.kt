@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -9,7 +9,7 @@ import java.time.LocalDateTime
 import java.time.ZoneId
 
 object UpdateScheduler {
-    const val ACTION_MIDNIGHT = "dev.simpleymd.widget.ACTION_MIDNIGHT_UPDATE"
+    const val ACTION_MIDNIGHT = "com.github.eylenburg.simpleymd.ACTION_MIDNIGHT_UPDATE"
 
     fun scheduleNextMidnight(context: Context) {
         try {

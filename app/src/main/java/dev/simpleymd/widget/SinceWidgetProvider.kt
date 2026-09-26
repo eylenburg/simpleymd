@@ -1,4 +1,4 @@
-package dev.simpleymd.widget
+package com.github.eylenburg.simpleymd
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.simpleymd.widget"
+    namespace = "com.github.eylenburg.simpleymd"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "dev.simpleymd.widget"
+        applicationId = "com.github.eylenburg.simpleymd"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
