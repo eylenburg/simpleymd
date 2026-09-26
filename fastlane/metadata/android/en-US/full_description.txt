@@ -1,5 +1,5 @@
 Simple YMD is a small homescreen widget that shows a label and a compact
-years / months / days counter.
+years / months / days counter for both countdowns and countups.
 
 Example:
 
