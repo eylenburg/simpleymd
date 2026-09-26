@@ -1,0 +1,25 @@
+Categories:
+  - Calendar & Agenda
+  - Timer
+License: AGPL-3.0-only
+SourceCode: https://github.com/eylenburg/simpleymd
+IssueTracker: https://github.com/eylenburg/simpleymd/issues
+
+AutoName: Simple YMD
+AuthorName: eylenburg
+
+RepoType: git
+Repo: https://github.com/eylenburg/simpleymd.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: f89d0940d8d1d839c7eb16a4db851183c7964f6d
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
