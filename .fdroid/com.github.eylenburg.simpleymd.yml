@@ -2,11 +2,11 @@ Categories:
   - Calendar & Agenda
   - Timer
 License: AGPL-3.0-only
+AuthorName: eylenburg
 SourceCode: https://github.com/eylenburg/simpleymd
 IssueTracker: https://github.com/eylenburg/simpleymd/issues
 
 AutoName: Simple YMD
-AuthorName: eylenburg
 
 RepoType: git
 Repo: https://github.com/eylenburg/simpleymd.git
