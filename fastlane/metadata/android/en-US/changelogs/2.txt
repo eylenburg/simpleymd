@@ -1,0 +1,1 @@
+Release build can be reproduced by F-Droid.

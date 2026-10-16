@@ -17,8 +17,8 @@ android {
         applicationId = "com.github.eylenburg.simpleymd"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
     }
 
     signingConfigs {
@@ -63,6 +63,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    // F-Droid rejects the extra "Dependency metadata" signing block.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
 }
 
 dependencies {
@@ -70,4 +76,11 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+}
+
+// baseline.prof and baseline.profm differ between builds.
+tasks.configureEach {
+    if (name.contains("ArtProfile")) {
+        enabled = false
+    }
 }
