@@ -2,7 +2,7 @@
 
 <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/eylenburg/simpleymd"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" alt="Get it on Obtainium" height="54"></a>
 
-Minimal FOSS Android homescreen widget:
+Minimal FOSS Android homescreen widget that counts down from or up to a certain date:
 
 ```
 Childs birthday:
