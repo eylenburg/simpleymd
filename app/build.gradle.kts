@@ -3,6 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+// CI supplies these. A local release build stays unsigned when they are absent.
+val releaseKeystoreFile = providers.environmentVariable("ANDROID_KEYSTORE_FILE").orNull
+val releaseKeystorePassword = providers.environmentVariable("ANDROID_KEYSTORE_PASSWORD").orNull
+val releaseKeyAlias = providers.environmentVariable("ANDROID_KEY_ALIAS").orNull
+val releaseKeyPassword = providers.environmentVariable("ANDROID_KEY_PASSWORD").orNull
+
 android {
     namespace = "com.github.eylenburg.simpleymd"
     compileSdk = 35
@@ -15,8 +21,31 @@ android {
         versionName = "1.0.0"
     }
 
+    signingConfigs {
+        if (!releaseKeystoreFile.isNullOrBlank()) {
+            check(!releaseKeystorePassword.isNullOrBlank()) {
+                "ANDROID_KEYSTORE_PASSWORD is required when ANDROID_KEYSTORE_FILE is set"
+            }
+            check(!releaseKeyAlias.isNullOrBlank()) {
+                "ANDROID_KEY_ALIAS is required when ANDROID_KEYSTORE_FILE is set"
+            }
+            check(!releaseKeyPassword.isNullOrBlank()) {
+                "ANDROID_KEY_PASSWORD is required when ANDROID_KEYSTORE_FILE is set"
+            }
+            create("release") {
+                storeFile = file(releaseKeystoreFile)
+                storePassword = releaseKeystorePassword
+                keyAlias = releaseKeyAlias
+                keyPassword = releaseKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (!releaseKeystoreFile.isNullOrBlank()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
